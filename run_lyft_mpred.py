@@ -473,7 +473,7 @@ much faster than using all data, but it will get larger loss",
     )
     parser.add_argument(
         "--num_workers",
-        default="16",
+        default="18",
         type=int,
         help="number of cpus for DataLoader",
     )
