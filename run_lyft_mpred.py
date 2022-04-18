@@ -47,7 +47,7 @@ class LyftMpredDatamodule(pl.LightningDataModule):
         l5kit_data_folder: str,
         cfg: dict,
         batch_size: int = 440,
-        num_workers: int = 18,
+        num_workers: int = 20,
         downsample_train: bool = False,
         is_test: bool = False,
         is_debug: bool = False,
@@ -396,7 +396,7 @@ def main(cfg: dict, args: argparse.Namespace) -> None:
         # Run lr finder
         if args.find_lr:
             lr_finder = trainer.tuner.lr_find(
-                model, datamodule=mpred_dm, num_training=500
+                model, datamodule=mpred_dm, num_training=1000
             )
             lr_finder.plot(suggest=True)
             plt.show()
