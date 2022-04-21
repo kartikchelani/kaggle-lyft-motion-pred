@@ -47,7 +47,7 @@ class LyftMpredDatamodule(pl.LightningDataModule):
         l5kit_data_folder: str,
         cfg: dict,
         batch_size: int = 440,
-        num_workers: int = 20,
+        num_workers: int = 18,
         downsample_train: bool = False,
         is_test: bool = False,
         is_debug: bool = False,
@@ -473,7 +473,7 @@ much faster than using all data, but it will get larger loss",
     )
     parser.add_argument(
         "--num_workers",
-        default="20",
+        default="18",
         type=int,
         help="number of cpus for DataLoader",
     )
