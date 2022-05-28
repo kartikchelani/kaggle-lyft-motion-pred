@@ -93,7 +93,7 @@ def extend_1st_convw_ch(
 
 class LyftMultiModel(nn.Module):
     def __init__(
-        self, cfg: dict, num_modes: int = 3, backbone_name: str = "efficientnet_b1"
+        self, cfg: dict, num_modes: int = 3, backbone_name: str = "efficientnet_b3"
     ) -> None:
         """
         Multi mode prediction net with imagenet pretrained backbone.
