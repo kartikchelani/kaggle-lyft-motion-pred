@@ -1,3 +1,5 @@
+# using open source code for vgg16 by github user 'mysim'
+# the link to the main github page: https://github.com/msyim/VGG16
 import torch
 import torch.nn as tnn
 import torchvision.datasets as dsets
