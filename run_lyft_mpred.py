@@ -436,7 +436,7 @@ if __name__ == "__main__":
     parser.add_argument("--epochs", type=int, default=1, help="epochs for training")
     parser.add_argument(
         "--backbone_name",
-        choices=["efficientnet_b0", "seresnext26d_32x4d"],
+        choices=["efficientnet_b1", "seresnext26d_32x4d"],
         default="seresnext26d_32x4d",
         help="backbone name",
     )
